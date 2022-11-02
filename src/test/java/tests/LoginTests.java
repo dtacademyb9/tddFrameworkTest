@@ -60,6 +60,15 @@ public class LoginTests extends TestBase{
         Assert.assertEquals(driver.getTitle(), "Web Orders Login");
     }
 
+    @Test (groups = "smoke")
+    public void loginNegativeBadCredentials3(){
+
+        System.out.println(System.getProperty("browser"));
+        loginPage = new LoginPage();
+        loginPage.login("Blaba", "blala");
+        Assert.assertEquals(driver.getTitle(), "Web Orders Login");
+    }
+
 
 
     @Test
