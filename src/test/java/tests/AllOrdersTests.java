@@ -38,6 +38,24 @@ public class AllOrdersTests extends TestBase {
 
     }
 
+
+    @Test (groups = "smoke")
+    public void checkAllButton2(){
+
+        LoginPage loginPage = new LoginPage();
+        loginPage.login();
+
+        AllOrdersPage allOrdersPage = new AllOrdersPage();
+        allOrdersPage.checkAllButton.click();
+
+        for (WebElement checkbox : allOrdersPage.checkboxes) {
+
+            Assert.assertTrue(checkbox.isSelected());
+        }
+
+    }
+
+
     @Test
     public void uncheckAllButton(){
         driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("Tester", Keys.TAB, "test", Keys.ENTER);
