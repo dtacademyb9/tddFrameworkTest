@@ -55,6 +55,23 @@ public class AllOrdersTests extends TestBase {
 
     }
 
+    @Test (groups = "smoke")
+    public void checkAllButton3(){
+
+        LoginPage loginPage = new LoginPage();
+        loginPage.login();
+
+        AllOrdersPage allOrdersPage = new AllOrdersPage();
+        allOrdersPage.checkAllButton.click();
+
+        for (WebElement checkbox : allOrdersPage.checkboxes) {
+
+            Assert.assertTrue(checkbox.isSelected());
+        }
+
+    }
+
+
 
     @Test
     public void uncheckAllButton(){
