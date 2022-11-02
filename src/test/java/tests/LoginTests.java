@@ -27,7 +27,11 @@ public class LoginTests extends TestBase{
 
     LoginPage loginPage;
 
-    @Test (groups = "blabla")
+
+    @Test (groups = "currentSprintTests")
+
+
+
     public void loginPositive() throws IOException {
 
 
