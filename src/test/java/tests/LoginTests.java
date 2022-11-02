@@ -42,7 +42,7 @@ public class LoginTests extends TestBase{
 
     }
 
-    @Test (groups = "smoke")
+    @Test (groups = "regression")
     public void loginNegativeBadCredentials(){
 
         System.out.println(System.getProperty("browser"));
