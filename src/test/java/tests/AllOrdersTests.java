@@ -56,7 +56,7 @@ public class AllOrdersTests extends TestBase {
     }
 
     @Test (groups = "smoke")
-    public void checkAllButton3(){
+    public void checkAllButtonAnotherName(){
 
         LoginPage loginPage = new LoginPage();
         loginPage.login();
